@@ -1,0 +1,120 @@
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+}
+body{
+	background-color: #BFC0C6;
+}
+.cabecera{
+	background-color: #05137C;
+	width: 100%;
+	height: 50px;
+	top:0;
+	display: flex;
+	min-height: 0;
+	position: sticky;
+}
+
+/*TODO EL CODIGO DEL LOGO EN LA PARTE SUPERIOR IZQUIERDA*/
+/********************************************************/
+/********************************************************/
+/********************************************************/
+.cabecera .logo{
+	width: 50px;
+	height: 50px;
+	background-image: url(../imagen/logo.png);
+	border:1px solid transparent;
+}
+
+.cabecera .logo:hover{
+	border:2px solid white;
+}
+/*AQUI TERMINA EL CODIGO DEL LOGO EN LA PARTE SUPERIOR IZQUIERDA*/
+/********************************************************/
+/********************************************************/
+/********************************************************/
+
+/*AQUI EMPIEZA EL RESTO DEL MENU*/
+/********************************************************/
+/********************************************************/
+/********************************************************/
+
+.cabecera .nombre{   /*NOMBRE DE LA PAGINA JUNTO A LA IMAG*/
+	width: 150px;
+	height: 50px;
+	color: white;
+	padding:5px;
+	font-size: 20px;
+	font-style: italic;
+	display: flex;
+	align-items: center;
+	justify-content: center;/*AQUI TERMINA EL NOMBRE DE LA PAGINA JUNTO A LA IMAGEN*/
+}
+
+.cabecera .nombre:hover{
+	border: 2px solid white;
+}
+
+/****************************************/
+/****************************************/
+/****************************************/
+
+/*AQUI EMPIEZA EL DODIGO DEL MENU DESPLEGABLE*/
+.cabecera .menu{
+	width: 500px;
+	height: 50px;
+	position: relative;
+	left: 600px;
+}
+
+
+.cabecera .menu ul{ /*TODAS LAS ETIQUETAS "UL" QUE ESTEN DENTRO DE MENU SE LES QUITARA EL ESTILO DE LISTA*/
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.cabecera .menu .submenu .s1{ /*SE HACE FLOTAR HACIA LA IZQUIERDA A TODOS LOS "S1"*/
+	float: left;
+	font-size: 15px;
+	font-style: italic;
+	font-weight: 500;
+}
+
+.cabecera .menu .submenu .s1 a{   /*TODAS LAS ETIQUETAS A*/
+	font-style: italic;
+	color: white; /*TENDRA UN COLOR BLANCO*/
+	text-decoration: none; /*SE ELIMINA EL SUBRAYADO A TODAS LAS ETIQUETAS A*/
+	padding: 15px 20px; /*TENDRA 15 PX HACIA ABAJO Y HACIA ARRIBA DE SEPARACION Y 20 HACIA LOS LADOS*/
+	display: block; /*SE COMPORTARA DE TIPO BLOQUE*/
+	font-size: 15px;
+	background-color: #05137C;
+}
+.cabecera .menu .submenu .s1 a:hover{
+	background-color: #CEF7F9;
+	color:#05137C;
+}
+
+nav ul li ul{ /*SE ESTA ENTRANDO A LA ETIQUETA NAV, LUEGO ETIQUETA UL, ETIQUETA LI Y POR ULTIMO ETIQUETA UL*/
+	display: none;
+}
+
+nav li:hover >ul{ /*EL MAYOR QUE INDICA QUE SEAN DIRECTOS DE "UL"*/
+	display: block;
+} /*AQUI TERMINA EL MENU DE LA DE LA PAGINA*/
+
+/*********************************************/
+/*********************************************/
+/*********************************************/
+
+.imagen{
+	width: 100%;
+	height:100vh;
+	background-image: url(../imagen/fut7.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
